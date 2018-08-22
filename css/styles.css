@@ -8,10 +8,14 @@
 	box-sizing: border-box;
 }
 
-[class*="-col"]{
+[class*="col-"]{
 	float: left;
 	padding: 5%;
 }
+
+/* for desktop screens */
+
+@media only screen and (min-width: 768px){
 
 .col-1{
 	width: 8.33%;
@@ -59,6 +63,86 @@
 
 .col-12{
 	width: 100%;
+}
+
+.row::after{
+	content: "";
+	clear: both;
+	display:table;
+}
+
+}
+/* for tablets */
+
+@media only screen and (min-width: 600px){
+
+.col-t-1{
+	width: 8.33%;
+}
+
+.col-t-2{
+	width: 16.66%;
+}
+
+.col-t-3{
+	width: 25%;
+}
+
+.col-t-4{
+	width: 33.33%;
+}
+
+.col-t-5{
+	width: 41.66%;
+}
+
+.col-t-6{
+	width: 50%;
+}
+
+.col-t-7{
+	width: 66.66%;
+}
+
+.col-t-8{
+	width: 75%;
+}
+
+.col-t-9{
+	width: 83.33%;
+}
+
+.col-t-10{
+	width: 83.33%;
+}
+
+.col-t-11{
+	width: 91.66%;
+}
+
+.col-t-12{
+	width: 100%;
+}
+
+.row::after{
+	content: "";
+	clear: both;
+	display:table;
+}
+
+}
+
+/* for mobile phones */
+@media only screen and (max-width: 768px){
+	[class "col-"]{
+		width: 100%;
+	}
+}
+
+/* if landscape orientation  */
+
+@media only screen and (orientation: landscape){
+
 }
 
 body,td,th,p{
