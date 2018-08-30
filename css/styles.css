@@ -25,120 +25,22 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		flex: 1;
 	}
 
-
-	.col-1{
-		width: 8.33%;
-	}
-
-	.col-2{
-		width: 16.66%;
-	}
-
-	.col-3{
-		width: 25%;
-	}
-
-	.col-4{
-		width: 33.33%;
-	}
-
-	.col-5{
-		width: 41.66%;
-	}
-
-	.col-6{
-		width: 50%;
-	}
-
-	.col-7{
-		width: 66.66%;
-	}
-
-	.col-8{
-		width: 75%;
-	}
-
-	.col-9{
-		width: 83.33%;
-	}
-
-	.col-10{
-		width: 83.33%;
-	}
-
-	.col-11{
-		width: 91.66%;
-	}
-
-	.col-12{
-		width: 100%;
-	}
-
-	.row::after{
-		content: "";
-		clear: both;
-		display:table;
-	}
-
 }
 /* for tablets */
 
 @media only screen and (min-width: 600px){
 
-	.col-t-1{
-		width: 8.33%;
-	}
+		body,td,th,p,ul,li{
+			font-size: 15pt;
+		}
 
-	.col-t-2{
-		width: 16.66%;
-	}
+		/* nav h1 a {
+			font-size: 20pt;
+		} */
 
-	.col-t-3{
-		width: 25%;
-	}
-
-	.col-t-4{
-		width: 33.33%;
-	}
-
-	.col-t-5{
-		width: 41.66%;
-	}
-
-	.col-t-6{
-		width: 50%;
-	}
-
-	.col-t-7{
-		width: 66.66%;
-	}
-
-	.col-t-8{
-		width: 75%;
-	}
-
-	.col-t-9{
-		width: 83.33%;
-	}
-
-	.col-t-10{
-		width: 83.33%;
-	}
-
-	.col-t-11{
-		width: 91.66%;
-	}
-
-	.col-t-12{
-		width: 100%;
-	}
-
-	.row::after{
-		content: "";
-		clear: both;
-		display:table;
-	}
-
+		#breadcrumb{
+			font-size: 30px;
+		}
 }
 
 /* for mobile phones */
@@ -154,6 +56,19 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		flex: 1;
 		width: 100%;
 	}
+
+	body,td,th,p,ul,li{
+		font-size: 15pt;
+	}
+
+	nav h1 a {
+		font-size: 20pt;
+	}
+
+	#breadcrumb{
+		font-size: 30px;
+	}
+
 }
 
 /* if landscape orientation  */
@@ -169,11 +84,13 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 	flex-direction: column;
 	flex-wrap: nowrap;
 	flex: 1;
+	/* display: grid; */
 }
 
 .flexbox-container > div {
 	width: 98%;
 	text-align: center;
+	border: solid black 5px;
 }
 
 body,td,th,p{
@@ -214,6 +131,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
 	background-color: #f3f3f3;
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 
 #footer {
@@ -228,7 +148,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 nav {
 	width: 100%;
-	height: 80px;
+	height: 100px;
 	background-color: #252831;
 	text-align:center;
 }
@@ -242,6 +162,7 @@ nav h1 a {
 	letter-spacing: 10px;
 	text-transform: uppercase;
 }
+
 #breadcrumb {
 	padding: 10px 40px 16px;
 	list-style: none;
@@ -376,18 +297,20 @@ nav h1 a {
 }
 .inside #map-container {
 	/* background: blue none repeat scroll 0 0; */
-	height: 10%;
-	/* position: fixed; */
-	position: absolute;
+	height: 20%;
+	position: fixed;
 	/* right: 0; */
 	/* top: 80px; */
-	top: 20%;
-	padding-bottom: 10%;
+	top: 10%;
+	/* padding-bottom: 10%; */
 	width: 100%;
 	/* width: 100%; */
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	flex: 1;
+	border: solid red 2px;
+	z-index: 100;
 }
 .inside #map {
 	background-color: #ccc;
@@ -396,6 +319,7 @@ nav h1 a {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	border: solid black 2px;
 }
 
 .map{
@@ -447,8 +371,9 @@ nav h1 a {
 	border-top: 1px solid #fff;
 	padding: 140px 40px 30px;
 	width: 100%;
-
+	border: solid black 5px;
 }
+
 #reviews-container {
 	padding: 30px 40px 80px;
 	display: flex;
