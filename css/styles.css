@@ -84,7 +84,6 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 	flex-direction: column;
 	flex-wrap: nowrap;
 	flex: 1;
-	/* display: grid; */
 }
 
 .flexbox-container > div {
