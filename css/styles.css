@@ -32,7 +32,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 	.flexbox-container{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		flex: 1;
 		/* display: grid; */
 	}
@@ -84,7 +84,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		min-height: 100%;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	#footer {
@@ -180,7 +180,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		width: 200px;
 		/* display: flex; */
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	/* ====================== Restaurant Listing ====================== */
@@ -208,7 +208,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		margin: 0;
 		max-width: 100%;
 		min-height: 248px;
-		min-width: 90%;
+		/* min-width: 90%; */
 	}
 	#restaurants-list li h1 {
 		color: #f18200;
@@ -242,7 +242,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 	.inside{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	.inside header {
@@ -263,7 +263,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		/* width: 100%; */
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		flex: 1;
 		border: solid red 2px;
 		z-index: 100;
@@ -274,7 +274,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		border: solid black 2px;
 	}
 
@@ -282,7 +282,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	.inside #footer {
@@ -291,7 +291,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 	#restaurant-name {
 		color: #f18200;
@@ -326,21 +326,23 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		border-bottom: 1px solid #d9d9d9;
 		border-top: 1px solid #fff;
 		padding: 140px 40px 30px;
-		width: 100%;
+		/* width: 100%; */
 		border: solid black 2px;
+		overflow-wrap: break-word;
+		overflow-x: auto;
 	}
 
 	#reviews-container {
 		padding: 30px 40px 80px;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	#restaurant-container{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	#reviews-container h2 {
@@ -367,7 +369,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		padding: 0 20px 20px;
 		position: relative;
 		/* width: 85%;  */
-		width: 100%;
+		/* width: 100%; */
 	}
 
 	#reviews-list li p {
@@ -415,9 +417,9 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 
 /* for mobile phones */
 @media only screen and (max-width: 768px){
-	[class "col-"]{
+	/* [class "col-"]{
 		width: 100%;
-	}
+	} */
 
 	 #map-container{
 	flex: 1;
@@ -451,8 +453,10 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 		border-bottom: 1px solid #d9d9d9;
 		border-top: 1px solid #fff;
 		padding: 140px 40px 30px;
-		width: 85%;
+		width: 90%;
 		border: solid black 2px;
+		flex: 1;
+		overflow-x: auto;
 
 	}
 
