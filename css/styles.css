@@ -56,6 +56,11 @@ body {
 	margin: 0;
 	position:relative;
 }
+
+body:focus{
+	background-color: lightblue;
+}
+
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -208,7 +213,8 @@ nav h1 a {
 	display: block;
 	margin: 0;
 	max-width: 100%;
-	min-height: 248px;
+	/* min-height: 248px; */
+	height: auto;
 	/* min-width: 90%; */
 }
 #restaurants-list li h1 {
@@ -304,7 +310,8 @@ nav h1 a {
 	line-height: 1.1;
 }
 #restaurant-img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 #restaurant-address {
 	font-size: 12pt;
@@ -366,7 +373,7 @@ nav h1 a {
 	list-style-type: none;
 	margin: 0 0 30px;
 	overflow: hidden;
-	padding: 0 20px 20px;
+	/* padding: 0 20px 20px; */
 	position: relative;
 	/* width: 85%;  */
 	/* width: 100%; */
