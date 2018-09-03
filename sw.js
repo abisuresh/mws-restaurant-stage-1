@@ -11,10 +11,10 @@ var pagesToCache = [
   '/data/restaurants.json',
   '/index.html',
   '/restaurant.html'
-]
+];
 
 //Installing service worker
-self.addEventListener('install',function(){
+self.addEventListener('install',function(event){
   event.waitUntil(
     caches.open(cacheName).then(function(cache){
       return cache.addAll(pagesToCache)
@@ -24,8 +24,8 @@ self.addEventListener('install',function(){
 
 //Opening cached files
 
-if('caches' in window){
-  caches.open(cacheName);
-}
+// if('caches' in window){
+//   caches.open(cacheName);
+// }
 
 //Updating service worker
