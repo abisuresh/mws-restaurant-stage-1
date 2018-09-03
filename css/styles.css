@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* used tutorials on https://www.w3schools.com/css/css_rwd_grid.asp and
+/* used tutorials on https://www.w3schools.com/css/css_rwd_grid.asp,
+https://www.youtube.com/watch?v=92dtrNU1GQc [MWS webinar] and
 https://coder-coder.com/make-responsive-grid-css/ to help with*/
 /* my design of a responsive grid  */
 
@@ -41,9 +42,9 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
-	max-width: 1100px;
+	max-width: 1400px;
 	margin-left: auto;
-	margin-left: auto;
+	margin-right: auto;
 }
 
 body:focus{
@@ -52,7 +53,7 @@ body:focus{
 
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 14pt;
 	color: #333;
 }
 a {
@@ -85,7 +86,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	background-color: #444;
 	width: 100%;
 	color: #aaa;
-	font-size: 8pt;
+	font-size: 12pt;
 	letter-spacing: 1px;
 	padding: 25px;
 	text-align: center;
@@ -148,9 +149,10 @@ nav h1 a {
 /* ====================== Map ====================== */
 #map {
 	height: 400px;
-	display: block;
-	max-width: 100%;
-	/* width: 100%; */
+	/* display: block; */
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 	background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
@@ -174,7 +176,7 @@ nav h1 a {
 	border: 1px solid #fff;
 	border-radius: 4px 4px;
 	font-family: Arial,sans-serif;
-	font-size: 11pt;
+	font-size: 14pt;
 	/* height: 35px; */
 	height: 50%;
 	letter-spacing: 0;
@@ -202,7 +204,8 @@ nav h1 a {
 }
 #restaurants-list li {
 	background-color: #fff;
-	border: 2px solid #ccc;
+	/* border: 2px solid #ccc; */
+	border: 2px solid purple;
 	border-radius: 4px 4px;
 	font-family: Arial,sans-serif;
 	margin: 15px;
@@ -218,9 +221,7 @@ nav h1 a {
 	/* display: block; */
 	margin: 0;
 	max-width: 100%;
-	/* min-height: 248px; */
 	height: auto;
-	/* min-width: 90%; */
 	display: flex;
 	flex-direction: row;
 }
@@ -236,7 +237,7 @@ nav h1 a {
 }
 #restaurants-list p {
 	margin: 0;
-	font-size: 11pt;
+	font-size: 14pt;
 }
 #restaurants-list li a {
 	background-color: orange;
@@ -244,7 +245,7 @@ nav h1 a {
 	border-radius: 4px 4px;
 	color: #fff;
 	display: inline-block;
-	font-size: 10pt;
+	font-size: 14pt;
 	margin: 15px 0 0;
 	padding: 8px 30px 10px;
 	text-align: center;
@@ -268,13 +269,9 @@ nav h1 a {
 }
 .inside #map-container {
 	/* background: blue none repeat scroll 0 0; */
-	height: 20%;
-	/* position: fixed; */
-	/* right: 0; */
-	/* top: 80px; */
+	height: auto;
 	top: 10%;
-	/* padding-bottom: 10%; */
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -283,9 +280,8 @@ nav h1 a {
 }
 .inside #map {
 	background-color: #ccc;
-	height: 100%;
+	height: auto;
 	max-width: 100%;
-	/* width: 100%; */
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -297,6 +293,7 @@ nav h1 a {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	max-width: 100%;
 }
 
 .inside #footer {
@@ -323,13 +320,13 @@ nav h1 a {
 	height: auto;
 }
 #restaurant-address {
-	font-size: 12pt;
+	font-size: 14pt;
 	margin: 10px 0px;
 }
 #restaurant-cuisine {
 	background-color: #333;
 	color: #ddd;
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: 300;
 	letter-spacing: 10px;
 	margin: 0 0 20px;
@@ -462,6 +459,9 @@ nav h1 a {
 	.filter-options select{
 		height: auto;
 		width: 30%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	nav h1 a {
