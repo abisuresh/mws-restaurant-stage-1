@@ -24,10 +24,10 @@
     <div class="maincontent">
       <main role: "main" id="maincontent">
         <div class="map">
-        <section id="map-container">
-          <div id="map"></div>
-        </section>
-      </div>
+          <section id="map-container">
+            <div id="map"></div>
+          </section>
+        </div>
 
         <div class="restaurantsSelection">
           <section role= "section">
@@ -65,10 +65,13 @@
   <!-- registering service worker  -->
   <script>
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker
-    .register('sw.js')
-    .then(function() { console.log("Service Worker Registered"); });
-  }
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('/sw.js').then(function(registration){
+        console.log("Service Worker Registered");
+    });
+  });
+} 
+
 </script>
 
 </body>
