@@ -519,7 +519,7 @@ nav h1 a {
 
 /* for tablets */
 
-@media only screen and (min-width: 769px) and (max-width:1023px){
+@media only screen and (min-width: 701px) and (max-width:1023px){
 
 	/* #map-container{
 		flex: 1;
@@ -552,7 +552,7 @@ nav h1 a {
 }
 
 /* for mobile phones */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 700px){
 
 	#map-container{
 		flex: 1;
