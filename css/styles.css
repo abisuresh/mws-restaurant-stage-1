@@ -22,6 +22,7 @@ https://coder-coder.com/make-responsive-grid-css/ to help with*/
 	justify-content: space-evenly;
 	grid-row-gap: 10px;
 	grid-column-gap: 0;
+	overflow-x: hidden;
 }
 
 .flexbox-container > div {
@@ -90,6 +91,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	align-content: center;
 	justify-content: center;
 	margin: auto;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #footer {
@@ -105,18 +108,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
-	width: 100%;
+	width: 105%;
 	/* height: 100px; */
 	background-color: #252831;
 	align-content: center;
 	justify-content: center;
-	margin: auto; 
+	margin: auto;
 	text-align:center;
 }
 nav h1 {
 	margin: auto;
 	align-content: center;
 	justify-content: center;
+	padding-right: 1.5%;
+	padding-left: 1.5%;
 }
 nav h1 a {
 	color: #fff;
@@ -127,6 +132,7 @@ nav h1 a {
 	margin: auto;
 	align-content: center;
 	justify-content: center;
+
 }
 
 #breadcrumb {
@@ -172,7 +178,7 @@ nav h1 a {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	max-width: 100%;
+	width: 105%;
 	background-color: #ccc;
 	align-content: center;
 	justify-content: center;
@@ -232,8 +238,8 @@ nav h1 a {
 	font-family: Arial,sans-serif;
 	margin: 15px;
 	min-height: 380px;
-	min-width: 15%;
-	max-width: 18%;
+	min-width: 25%;
+	max-width: 30%;
 	padding: 0 30px 25px;
 	text-align: left;
 	: 270px;
@@ -326,6 +332,7 @@ nav h1 a {
 	align-content: center;
 	justify-content: center;
 	margin: auto;
+	padding-bottom: 5%; 
 }
 
 .inside #footer {
@@ -362,6 +369,7 @@ nav h1 a {
 	/* display: flex;
 	flex-direction: row;
 	flex-wrap: wrap; */
+	padding-bottom: 2%;
 	align-content: center;
 	text-align: center;
 	justify-content: center;
@@ -376,7 +384,7 @@ nav h1 a {
 	align-content: center;
 	justify-content: center;
 	margin: auto;
-	border: solid black 1px;
+	/* border: solid black 1px; */
 }
 #restaurant-cuisine {
 	background-color: #333;
@@ -487,15 +495,24 @@ nav h1 a {
 	color: white;
 } */
 
+#restaurant-hours{
+		max-width: 40%;
+		text-align: center;
+		align-content: center;
+		justify-content: center;
+		margin: auto;
+		padding-bottom: 5%;
+}
 #restaurant-hours td {
 	color: #666;
 	text-align: center;
 	align-content: center;
 	justify-content: center;
 	margin: auto;
+	border: solid black 1px;
 }
 
-}
+/* } */
 
 /* for tablets */
 
@@ -563,6 +580,14 @@ nav h1 a {
 		font-size: 1.5em;
 	}
 
+	#restaurant-hours{
+		max-width: 80%;
+		text-align: center;
+		align-content: center;
+		justify-content: center;
+		margin: auto;
+	}
+
 	#restaurants-list li {
 		max-width: 90%;
 	}
@@ -577,7 +602,7 @@ nav h1 a {
 		/* padding: 140px 40px 30px; */
 		max-width: 95%;
 		/* width: 95%; */
-		border: solid black 2px;
+		/* border: solid black 2px; */
 		/* flex: 1; */
 		overflow-x: hidden;
 		overflow-wrap: break-word;
