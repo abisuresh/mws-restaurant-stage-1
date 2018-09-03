@@ -332,7 +332,7 @@ nav h1 a {
 	align-content: center;
 	justify-content: center;
 	margin: auto;
-	padding-bottom: 5%; 
+	padding-bottom: 5%;
 }
 
 .inside #footer {
@@ -376,7 +376,8 @@ nav h1 a {
 	/* justify-content: center;  */
 }
 #restaurant-address {
-	font-size: 14pt;
+	font-size: 16pt;
+	font-weight: 600;
 	/* margin: 10px 0px; */
 	/* display: flex;
 	flex-direction: row;

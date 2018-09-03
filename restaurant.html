@@ -40,28 +40,18 @@
       <!-- Beginning restaurant -->
       <div class="overallRestaurant">
       <section id="restaurant-container">
-        <!-- <div class="restaurantName"> -->
-          <h1 id="restaurant-name"></h1>
-        <!-- </div> -->
-        <!-- <div class="restaurantImage"> -->
-          <img id="restaurant-img" alt="Image of Restaurant">
-        <!-- </div> -->
-        <!-- <div class="restaurantCuisine"> -->
-          <p id="restaurant-cuisine"></p>
-        <!-- </div> -->
-          <!-- <div class="restaurantAddress"> -->
-            <p id="restaurant-address"></p>
-          <!-- </div> -->
-          <!-- <div class="restaurantHours"> -->
+          <h1 aria="restaurant name" id="restaurant-name"></h1>
+          <img aria-labelledby="Image of Restaurant" id="restaurant-img" alt="Image of Restaurant">
+          <p aria-label="restaurant cuisine" id="restaurant-cuisine"></p>
+          <p aria-label="restaurant address" id="restaurant-address"></p>
             <table id="restaurant-hours"></table>
-          <!-- </div> -->
         </section>
-      </div> 
+      </div>
       <!-- end restaurant -->
 
       <div class="map restaurantMap">
         <!-- Beginning map -->
-        <section role= "section" id="map-container">
+        <section role= "section" aria-label="map" id="map-container">
 
           <div id="map"></div>
 
@@ -69,7 +59,7 @@
       </div>
             <!-- End map -->
       <!-- Beginning reviews -->
-      <div class="reviews">
+      <div aria-labelledby="reviews" class="reviews">
         <section id="reviews-container">
           <ul id="reviews-list"></ul>
         </section>
