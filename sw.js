@@ -1,8 +1,10 @@
-//Based on tutorial in https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
-//https://developers.google.com/web/fundamentals/primers/service-workers/ and
+//Based on tutorials in https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+//https://developers.google.com/web/fundamentals/primers/service-workers/
+// https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers and
 // https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network
 // const request = new request();
 
+//Cache-ing images and pages
 var cacheName = "Restaurants";
 var pagesToCache = [
     '/css/styles.css',
@@ -34,6 +36,7 @@ self.addEventListener('install',function(event){
 });
 
 //Opening cached files
+//When offline
 
 self.addEventListener('fetch', function(event){
     event.respondWith(
