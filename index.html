@@ -16,33 +16,33 @@
     <div class="header">
       <header>
         <nav>
-          <h1><a type="text" role="banner" href="/">Restaurant Reviews</a></h1>
+          <h1><a tabindex="0" type="text" role="banner" href="/">Restaurant Reviews</a></h1>
         </nav>
       </header>
     </div>
 
     <div class="maincontent">
       <main role = "main" id="maincontent">
-        <div class="map">
+        <div tabindex="0" class="map">
           <section id="map-container">
-            <div id="map"></div>
+            <div tabindex="0" id="map"></div>
           </section>
         </div>
 
-        <div class="restaurantsSelection">
+        <div tabindex="0" class="restaurantsSelection">
           <section role= "section">
-            <div class="filter-options">
+            <div tabindex="0" class="filter-options">
               <h2 aria-labelledby="Filter Results">Filter Results</h2>
-              <div class="selectFilters">
-                <select role="listbox" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+              <div tabindex="0" class="selectFilters">
+                <select tabindex="0" role="listbox" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
                   <option aria-labelledby="all neighborhoods" value="all">All Neighborhoods</option>
                 </select>
-                <select role="listbox" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                <select tabindex="0" role="listbox" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
                   <option aria-labelledby="all cuisines" value="all">All Cuisines</option>
                 </select>
               </div>
             </div>
-            <div class="flexbox row">
+            <div tabindex="0" class="flexbox row">
               <ul aria-label="restaurants list" id="restaurants-list"></ul>
             </div>
           </section>
@@ -54,7 +54,7 @@
     <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 
-    <div class="footer">
+    <div tabindex="0" class="footer">
       <footer id="footer" aria-labelledby="copyright 2017 restaurant reviews">
         Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
       </footer>
