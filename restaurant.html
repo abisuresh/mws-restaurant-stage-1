@@ -19,7 +19,7 @@
     <div class="header">
     <header>
       <!-- Beginning nav -->
-      <div tabindex="0" class="nav">
+      <div aria-labelledby="header" tabindex="0" class="nav">
         <nav>
           <h1><a type="text" role="banner" href="/">Restaurant Reviews</a></h1>
         </nav>
@@ -38,8 +38,8 @@
 <!-- <div class="maincontent"> -->
     <main role= "main" id="maincontent">
       <!-- Beginning restaurant -->
-      <div tabindex="0" class="overallRestaurant">
-      <section id="restaurant-container">
+      <div aria-labelledby="restaurant details" tabindex="0" class="overallRestaurant">
+      <section aria-labelledby="restaurant details container" id="restaurant-container">
           <h1 id="restaurant-name"></h1>
           <img aria-labelledby="Image of Restaurant" id="restaurant-img" alt="Image of Restaurant">
           <p aria-label="restaurant cuisine" id="restaurant-cuisine"></p>
@@ -49,16 +49,16 @@
       </div>
       <!-- end restaurant -->
 
-      <div tabindex="0"  class="map restaurantMap">
+      <div aria-labelledby="map" tabindex="0"  class="map restaurantMap">
         <!-- Beginning map -->
-        <section role= "section" aria-label="map" id="map-container">
+        <section role= "section" aria-labelledby="map" id="map-container">
           <div tabindex="0" id="map"></div>
         </section>
       </div>
             <!-- End map -->
       <!-- Beginning reviews -->
       <div tabindex="0" aria-labelledby="reviews" class="reviews">
-        <section tabindex="0" id="reviews-container">
+        <section tabindex="0" aria-labelledby="reviews" id="reviews-container">
           <ul tabindex="0" id="reviews-list"></ul>
         </section>
       </div>
@@ -67,7 +67,7 @@
     <!-- End main -->
 
     <!-- Beginning footer -->
-    <div tabindex="0" class="footer">
+    <div aria-labelledby="footer" tabindex="0" class="footer">
       <footer id="footer" aria-labelledby="copyright 2017 restaurant reviews">
         Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
       </footer>

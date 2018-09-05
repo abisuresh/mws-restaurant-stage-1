@@ -13,7 +13,7 @@
 
 <body>
   <div class= "flexbox-container">
-    <div class="header">
+    <div aria-labelledby="header" class="header">
       <header>
         <nav>
           <h1><a tabindex="0" type="text" role="banner" href="/">Restaurant Reviews</a></h1>
@@ -21,19 +21,19 @@
       </header>
     </div>
 
-    <div class="maincontent">
+    <div aria-labelledby="main content" class="maincontent">
       <main role = "main" id="maincontent">
-        <div tabindex="0" class="map">
-          <section id="map-container">
-            <div tabindex="0" id="map"></div>
+        <div aria-labelledby="map container" tabindex="0" class="map">
+          <section aria-labelledby="map container" id="map-container">
+            <div aria-labelledby="map" tabindex="-1" id="map"></div>
           </section>
         </div>
 
-        <div tabindex="0" class="restaurantsSelection">
+        <div aria-labelledby="restaurants selection" tabindex="0" class="restaurantsSelection">
           <section role= "section">
-            <div tabindex="0" class="filter-options">
+            <div aria-labelledby="filter options" tabindex="0" class="filter-options">
               <h2 aria-labelledby="Filter Results">Filter Results</h2>
-              <div tabindex="0" class="selectFilters">
+              <div aria-labelledby="select filters" tabindex="0" class="selectFilters">
                 <select tabindex="0" role="listbox" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
                   <option aria-labelledby="all neighborhoods" value="all">All Neighborhoods</option>
                 </select>
@@ -42,7 +42,7 @@
                 </select>
               </div>
             </div>
-            <div tabindex="0" class="flexbox row">
+            <div aria-labelledby="restaurants list" tabindex="0" class="flexbox row">
               <ul aria-label="restaurants list" id="restaurants-list"></ul>
             </div>
           </section>
