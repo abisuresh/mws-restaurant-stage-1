@@ -181,6 +181,7 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   // more.href = DBHelper.urlForRestaurant(restaurant);
   const restURL = DBHelper.urlForRestaurant(restaurant);
+  more["aria-label"] = 'View Details';
   $(more).on('click', function(){
     window.location = restURL;
   });

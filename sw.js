@@ -2,7 +2,6 @@
 //https://developers.google.com/web/fundamentals/primers/service-workers/
 // https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers and
 // https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network
-// const request = new request();
 
 //Cache-ing images and pages
 var cacheName = "Restaurants";
@@ -66,7 +65,7 @@ self.addEventListener('fetch', function(event){
 //     }));
 // });
 
-// When offline
+// When offline- alternate version
 
 // self.addEventListener('fetch', function(event){
 //     event.respondWith(
